@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="Bootstrap\bootstrap.css">
+      <link rel="stylesheet" href="index.css">
+	  <title>Book Management</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Book Management</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#/home">Home</a>
+                <a class="nav-item nav-link" href="#/books">Books</a>
+                <a class="nav-item nav-link" href="#/authors">Authors</a>
+                <a class="nav-item nav-link" href="#/popular">Popular books</a>
+                <a class="nav-item nav-link" href="#/contact">Contact</a>
+              </div>
+            </div>
+        </nav>
+
+        <div ng-app="mainApp">
+            <ng-view></ng-view>
+        </div>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script src="JQuery\jquery.min.js"></script>
+        <script src="Bootstrap\bootstrap.js"></script>
+    </body>
+</html>
